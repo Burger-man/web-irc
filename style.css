@@ -1,0 +1,149 @@
+/* Default styling for all pages */
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the main element */
+main {
+    background-color: #393939;
+}
+  
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  
+/* Styling for the connect button */
+#connect_btn {
+    all: unset;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    margin-left: 17vw;
+    margin-top: 16vh;
+    position: absolute;
+    text-align: center;
+    width: 10vh;
+}
+  
+/* Styling for the input field container */
+#input_field {
+    align-items: center;
+    background-color: #535353;
+    display: flex;
+    flex-direction: column;
+    height: 22.5vh;
+    justify-content: center;
+    width: 30vw;
+}
+  
+/* Styling for input field wrapper */
+.input-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1vh;
+}
+  
+/* Styling for input field */
+  .input-wrapper input {
+    all: unset;
+    background-color: #494949;
+    margin-bottom: 2vh;
+    width: 17vw;
+}
+  
+/* Styling for label of input field */
+.input-wrapper p {
+    margin-bottom: 2vh;
+    margin-right: 1vw;
+}
+  
+/* Styling for the main login container */
+#main_login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+  
+/* Styling for the main view container */
+#main_view {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+  
+/* Styling for the title field container */
+#title_field {
+    align-items: center;
+    background-color: #303030;
+    display: flex;
+    height: 7.5vh;
+    justify-content: center;
+    width: 30vw;
+}
+  
+/* Styling for the version text */
+.version {
+    margin-top: 1vh;
+    font-weight: normal;
+}
+  
+/* Styling for h2 heading */
+h2 {
+    color: orange;
+    font-size: x-large;
+}
+  
+/* Styling for all input fields */
+input {
+    background-color: #494949;
+}
+  
+/* Styling for server message */
+.server-message {
+    color: orange;
+}  
+
+/* Styling for the viewport container */
+#viewport {
+    background-color: #303030;
+    height: 90vh;
+    margin-bottom: 5vh;
+    margin-left: 7vw;
+    width: 85vw;
+}
+
+/* Styling for message input */
+#message_input{
+    position: absolute;
+    margin-top: 90vh;
+    margin-right: 3vw;
+    width: 75vw;
+}
+
+/* Styling for the send button */
+#send_btn {
+    all: unset;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    margin-left: 85vw;
+    margin-top: 90vh;
+    position: absolute;
+    text-align: center;
+    height: 3vh;
+    width: 13vh;
+}

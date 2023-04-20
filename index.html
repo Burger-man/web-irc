@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRC client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="main_login">
+            <div id="title_field">
+                <h2>IRC client</h2>
+            </div>
+            <div id="input_field">
+                <div class="input-wrapper">
+                    <p>IP Address:</p>
+                    <input id="IP" type="text">
+                </div>
+                <div class="input-wrapper">
+                    <p>Username:</p>
+                    <input id="username" type="text">
+                </div>
+                <button id="connect_btn" onclick="connect()">Connect</button>
+            </div>
+            <p class="version">Version 1.0.0</p>
+            <p style="margin-top: 1vh;color: red;" id="error_str"></p>
+        </section>
+        <section id="main_view">
+            <div id="viewport"></div>
+            <input id="message_input" type="text">
+            <button id="send_btn" onclick="send()">Send</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
