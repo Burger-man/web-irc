@@ -2,9 +2,7 @@
 * {
     box-sizing: border-box;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
-    font-weight: bold;
+    font-family: 'VT323', monospace;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +13,7 @@ main {
 }
   
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
   
 /* Styling for the connect button */
 #connect_btn {
@@ -28,7 +26,8 @@ main {
     margin-top: 16vh;
     position: absolute;
     text-align: center;
-    width: 10vh;
+    width: 5.5vw;
+    height: 3vh;
 }
   
 /* Styling for the input field container */
@@ -114,23 +113,58 @@ input {
 /* Styling for server message */
 .server-message {
     color: orange;
+    margin-left: 1vw;
+    margin-top: 1vh;
 }  
+
+.client-message{
+    color: white;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
 
 /* Styling for the viewport container */
 #viewport {
     background-color: #303030;
     height: 90vh;
     margin-bottom: 5vh;
-    margin-left: 7vw;
-    width: 85vw;
+    margin-left: 20vw;
+    width: 70vw;
+    overflow-y: scroll;
+}
+
+#viewport::-webkit-scrollbar {
+    width: 7.5px;
+}
+  
+#viewport::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+  
+#viewport::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+#viewport::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+  
+#viewport::-webkit-scrollbar-button {
+    display: none;
+}
+
+#viewport p{
+    margin-top: 1vh;
+    margin-left: 1vh;
 }
 
 /* Styling for message input */
 #message_input{
     position: absolute;
     margin-top: 90vh;
-    margin-right: 3vw;
-    width: 75vw;
+    margin-right: -10vw;
+    width: 60vw;
 }
 
 /* Styling for the send button */
@@ -140,7 +174,7 @@ input {
     color: white;
     cursor: pointer;
     font-weight: normal;
-    margin-left: 85vw;
+    margin-left: 83vw;
     margin-top: 90vh;
     position: absolute;
     text-align: center;

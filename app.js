@@ -57,7 +57,28 @@ function send() {
   // Send message to server
   ws.send(message);
   console.log(`[+] Sent message to server: ${message}`);
-  // Update the viewport div with the sent message
-  document.getElementById('viewport').innerHTML += `[${username}]: ${message}` + '<br>';
+  
+  // Append the sent message as an HTML element to the viewport div
+  let messageElement = document.createElement('p');
+  messageElement.innerText = `[${username}]: ${message}`;
+  document.getElementById('viewport').insertAdjacentElement('beforeend', messageElement);
+
+  // Scroll the viewport to the bottom
+  let viewport = document.getElementById('viewport');
+  viewport.scrollTop = viewport.scrollHeight;
+
+  // Clear the input field
+  document.getElementById('message_input').value = '';
 }
 
+// Get the message input field
+let messageInput = document.getElementById("message_input");
+
+// Add an event listener to the message input field
+messageInput.addEventListener("keypress", function(event) {
+  // Check if the "Enter" key was pressed
+  if (event.key === "Enter") {
+    // Call the send() function
+    send();
+  }
+});
